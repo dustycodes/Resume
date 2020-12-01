@@ -1,0 +1,193 @@
+%% start of file `template.tex'.
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Dusty}{Argyle}
+\title{Computer Engineer}                               % optional, remove / comment the line if not wanted
+\address{Salt Lake City, Utah}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(801) 879-1034}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{dusty@dustycodes.com}                               % optional, remove / comment the line if not wanted
+\homepage{github/dustycodes}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{A highly motivated and capable engineer with a background spanning all things related to software, hardware and infrastructure. Experience leading teams and making technical decisions. Projects spanning drones, robots, web applications and server infrastructure. }
+
+\section{Education}
+
+\vspace{1pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{1pt}
+
+\begin{itemize}
+
+\item{\cventry{2013--2016}{B.S. Computer Engineering}{University of Utah}{Salt Lake City, Utah}{}{\vspace{3pt} Algorithms, Artificial Intelligence, Robotics, Embedded Systems, Technical Writing,Circuit Analysis, Data Structures, Probability \& Statistics in Engineering, Computer Organization, Ordinary/Partial Differential Equations, Calculus, Physics, Linear Algebra, Software Practice I \& II, DigitalSystem Design, Web Software Architecture, Computer Systems, Mobile Applications, Digital Systems Design}}
+
+\vspace{1pt}
+
+\item{\cventry{2012--2013}{General Education - Baseball}{Utah State University}{Logan, Utah}{}{}}  % arguments 3 to 6 can be left empty
+
+\end{itemize}
+
+\section{Employment}
+
+\vspace{1pt}
+
+\begin{itemize}
+
+\item{\cventry{Feb 2019 -- Current}{Technical Lead}{Sarcos Defense - Air Force Research Labs UAV Program}{SLC (Research Park), Utah}{}{\vspace{3pt} Department of Defense - sensitive unmanned air vehicle project. Handle interface with customers and development teams to further development and research of the program. Plan, in detail, customer requests and technical requirements for the product. Provide guidance and support for my team and other supporting entities on the project. Built a software in the loop simulation with Gazebo for the platform to support various payload integrations and flight dynamics. Lead software architect on the project. Experience with camera, lidar, radar, QT, ROS, PX4, DJI, Ardupilot, and supporting inertial navigation systems. Sensor fusion to combine all information from sensors to provide semi-autonomous user control and to fulfill the program's indicated goal safely.}}
+
+\vspace{1pt}
+
+\item{\cventry{Feb 2017 -- Current}{Computer Engineer}{Sarcos Robotics}{SLC (Research Park), Utah}{}{\vspace{3pt} Worked on several robotic systems (Guardian S, XO). Designed motor controllers and high level control algorithms. Wrote firmware for custom designed boards. Built interfaces to control and command the robot. Implemented computer vision based algorithms to autonomously control the robot. Added cloud capabilities to map 3d point clouds with PCL via lidar and visual inertial odemetry, Infrastructure support for production robots. Designed hardware test benches. Added a ROS API for customers to be able to have programmatic control the robot.}}
+
+\vspace{1pt}
+
+\item{\cventry{Oct 2013 -- Feb 2017}{Software Engineer}{University of Utah - Application Deployment and Automation Team}{SLC (Tower 102), Utah}{}{\vspace{3pt} Designed, built and demonstrated new technologies to various groups around campus for potential implementation. Integrated and automated for Java development teams. Designed development processes to leverage continuous integration tools. Used configuration management tools to build and deploy sustainable and reliable web services on development and production infrastructures. 3rd party integrations. Developed RESTful web services. Practiced agile development. First group to containerize applications in Docker.}}
+
+\vspace{1pt}
+
+\end{itemize}
+\vspace{2pt}
+
+\section{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{Senior Design Project:} \textit{'SLAM Drone'}
+
+\vspace{3pt}
+
+\small{Development and design of an autonomous drone that can create 3-dimensional point cloud maps of its surroundings. Capable of maneuvering in a low noise environment. Maps were sent remotely via network connection to a server for processing and 3-dimensional rendering. Used ROS, MultiWii, Kicad, Orcad, and Sketchup to design and support the project. The major components include the xbox-360 Kinect, Sonar Sensors, Electronic Speed Controllers, Raspberry Pi, and a Multiwii compatible flight controller board.}}
+
+\vspace{6pt}
+
+\item{\textbf{Junior Design Project:} \textit{'SkiFree Game - RISC Design and Computer Organization'}
+
+\vspace{3pt} 
+
+\small{Project with the primary goal to design a RISC architecture computer that would be able to be utilized in a real world application. Implemented the design in verilog on the Xilinx Spartan 3 FPGA board. Designed a compiler and instruction set in order to write applications for the computer. Wrote drivers for accelerometer and VGA peripherals. Wrote the game SkiFree with a balance board.}}
+
+\vspace{6pt}
+
+\item{\textbf{Senior Software Project:} \textit{'IPhone App'}
+
+\vspace{3pt}
+
+\small{Created an IOS application that would inventory your possessions. This project involved some inheritance design on the back end, interface design, and making use of IOS device libraries for scanning bar codes via the camera. There was also some REST service integration for data persistence and portability. }}
+
+\vspace{3pt}
+
+\item{\textbf{Junior Software Project:} \textit{'Social Media Site'}
+
+\vspace{3pt}
+
+\small{Designed a website for bands to find locations to do their shows or vice versa. Involved Ruby on Rails with a MySQL database. Did some Bootstrap template work for user interface. Learned how modern web frameworks were designed and some of their uses. }}
+
+\vspace{3pt}
+
+\end{itemize}
+
+\section{Technical Skills \& Classes}
+
+\vspace{3pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} Proficient in Python, C++, C\#, Shell languages. Previous experience with C, Ruby, Java, Swift, TeX, SQL, Assembly, Verilog, Groovy, Matlab, Javascript.
+
+\vspace{3pt}
+
+\item \textbf{Supporting Software Skills:} Linux (Debian, RHEL), Docker, Git, Unix, VI, Jenkins CI/CD, VMWare, Configuration Management (Puppet, Salt), Cloud services (Azure, AWS, Google, Heroku), Reverse Proxies (nginx, haproxy, netscaler), Atlassian, Intellij and Microsoft products (administration and usage), Tensorflow, Tensor RT, OpenCV, Pandas, Bokeh, Matplotlib, Jupyter, ROS.
+
+\vspace{3pt}
+
+\item \textbf{General Business Skills:} Excellent presentation skills. Works exceptionally well in a team format and adapts easily to work flows as team and/or projects change. Loves a challenge. Supported various flavors of the agile product development framework. Experience working as a scrum master and team leader.
+
+\vspace{3pt}
+
+\item \textbf{Formal Training:} University Education, Red Hat 7, VMTurbo, Puppet Practitioner, ITIL, Udacity Sensor Fusion Course. Part 107 pilot.
+
+\vspace{3pt}
+
+\item \textbf{System Administration Experience:} Linux, Unix, Windows, Cloud based (AWS, Azure, Google), Kubernetes, Docker swarm, Bitbucket, Jira, Confluence, Jenkins, Gitlab, Postgres, MYSQL, OracleDB, etc...
+
+\end{itemize}
+
+\section{References}
+
+\vspace{3pt}
+ 
+\begin{itemize}
+
+\item{\textbf{Ashley Guinan}  \textit{'Manager'}\begin{flushright}\small{{(402) 553-3344}}\end{flushright}}
+
+\item{\textbf{Rex Jameson} \textit{'Colleague/Mentor'}\begin{flushright}\small{{(801) 244-5592}}\end{flushright}}
+
+\item{\textbf{Mike Granger} \textit{'Program Manager'}\begin{flushright}\small{{(801) 931-9188}}\end{flushright}}
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
