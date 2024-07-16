@@ -9,7 +9,13 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+}
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
@@ -17,6 +23,8 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{import}
+
+
 
 % personal data
 \name{Dusty}{Argyle}
@@ -48,45 +56,74 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\small{Highly motivated and capable engineer with a diverse background skill set related to software, hardware, robotics and cloud infrastructure. Experience leading teams and making technical decisions. Expertise in drones, robots, and computer vision. }
+\small{ \setstretch{1.2} Highly motivated and capable engineer with experience in fast-paced, agile work environments. Experience leading teams and making technical decisions. Excellent, high-quality, professional and complete output. }
 
 \section{Employment}
 
-\vspace{1pt}
+\vspace{6pt}
 
 \begin{itemize}
 
-\item{\cventry{Feb 2021 -- Current}{US Software Lead}{Sharper Shape}{SLC (Research Park), Utah}{}{\vspace{3pt} Lead team in technical capabilities and advancement. Develop AI/ML algorithms and models to understand and report on customer data. Develop autonomous capture of data and streamline ingestion. Support and plan product development. Develop drone based lidar and camera infrastructure inspections. Create infrastructure for AI/ML model deployment to production environments. }}
+\item{\cventry{Feb 2021 -- Current}{President - Founder}{DustyCodes}{SLC, Utah}{}{\vspace{3pt} 
+Software engineering consultation. Create and support specialized software development for clients. Augment a software team with specialized skills in computer vision, deep learning, machine learning, robotics, drones, security, cloud infrastructure and ML Ops. Secure data labeling using state of the art human-in-the-loop processes.
+}
+}
+\vspace{3pt}
 
-\vspace{4pt}
+\item{\cventry{Feb 2021 -- Current}{Director of AI/ML - Software Lead}{Sharper Shape}{Helsinki (Remote), Finland}{}{\vspace{3pt} 
+Plan, Lead, and execute on high level technical business requirements. Manage Data Ops, ML Ops, Research, and Production teams. Support customers, sales teams and users with demonstrations and feature development. Conduct research on state of the art technologies in AI/ML realm.
+}
+{\vspace{3pt} 
+Dataset creation and model training for RGB imagery and point cloud modalities in aerial infrastructure inspection tasks; including: Classification, Detection, Segmentation, Localization. Build clients for LLM interaction and operations in production environments. 
+}
 
-\item{\cventry{Feb 2017 -- Feb 2021}{Technical Lead / Robotic Software Engineer}{Sarcos Robotics}{SLC (Research Park), Utah}{}{\vspace{3pt} Develop and research technologies to advance company robotic algorithms and controls. Give autonomous machines means and smarts to make decisions, gather information, and execute on objectives. Full system simulation setup and design. Lead software architect on the project. Work with camera, lidar, radar, inertial navigation data to enhance robot capabilities. Sensor fusion to combine all information from sensors to provide semi-autonomous user control and to fulfill the program's indicated goal safely. Work on several robotic systems. Design and implement low level motor controllers and high level control algorithms. Build interfaces to control and command the robot. Leverage technologies in computer vision and deep learning to autonomously control the robot. Add cloud and remote control capabilities. Infrastructure support for production and testing. Design and implement APIs for customers to be able to have programmatic control the robot.}}
+{\vspace{3pt} 
+Architect and implement infrastructure for AI/ML in AWS. Build efficient and scalable data pipelines with serverless compute. Support helicopter and drone operations in the field. 
+}
+}
+\vspace{3pt}
 
-\vspace{4pt}
+\item{\cventry{Feb 2017 -- Feb 2021}{Technical Lead / Robotics Software Engineer}{Sarcos Robotics}{SLC (Research Park), Utah}{}{\vspace{3pt}
+Develop and research technologies to advance robotic algorithms and controls. Give autonomous machines means and smarts to make decisions based on perception and objectives. Full system simulation design and implementation. Lead software architect on the AFRL/ARL drone projects.}
+{\vspace{3pt}
+Work with camera, lidar, radar, inertial navigation data to enhance robot capabilities. Sensor fusion from sensors to provide autonomous execution of user requested actions and fulfill the program's indicated goal safely. Develop several robotic system designs for terrestrial robots. Design and implement low level motor controllers and high level orchestration control algorithms. 
+}
+
+{\vspace{3pt}
+Build interfaces to control and command the robot. Leverage technologies in computer vision and deep learning to gain additional perception. Add cloud and remote control capabilities to enhance features and accessibility. Infrastructure design and implementation to support production and development. Design and implement APIs for customers to be able to programmatically control the robot.}
+}
+
+\vspace{3pt}
 
 
-\item{\cventry{Oct 2013 -- Feb 2017}{Software Engineer}{University of Utah - Application Deployment and Automation Team}{SLC (Tower 102), Utah}{}{\vspace{3pt} Design, build and demonstrate new technologies to various groups around campus for potential adaptation. Integrat and automat for Java development teams. Design development processes to leverage continuous integration tools. Use configuration management tools to build and deploy sustainable and reliable web services on development and production infrastructures. 3rd party integration. Develope RESTful web services. Practice agile development. Containerize applications.}}
+\item{\cventry{Oct 2013 -- Feb 2017}{Software Engineer}{University of Utah - Application Deployment and Automation Team}{SLC (Tower 102), Utah}{}
+{\vspace{3pt}
+Design, build and demonstrate new technologies to various groups around campus and hospital for potential adaptation. Integrate and automate for web development teams. Design development processes to leverage continuous integration tools. 
+}
+{\vspace{3pt}
 
-\vspace{4pt}
+Use configuration management tools to build and deploy sustainable and reliable services on development and production infrastructures. Practice agile development. Containerize applications.
+}
+}
 
 \end{itemize}
 
 \section{Education}
 
-\vspace{1pt}
-
-\subsection{Academic Qualifications}
-
-\vspace{1pt}
+\vspace{6pt}
 
 \begin{itemize}
 
-\item{\cventry{2013--2016}{B.S. Computer Engineering}{University of Utah}{Salt Lake City, Utah}{}{\vspace{3pt} Robotics, Algorithms, Artificial Intelligence, Embedded Systems, Technical Writing, Circuit Analysis, Data Structures, Probability \& Statistics, Computer Organization and Design, Ordinary/Partial Differential Equations, Calculus, Physics, Linear Algebra, Computer Systems, Mobile Applications, Digital Systems Design, Web Software Architecture, Software Development and Architecture}}
+\item{\cventry{2013--2016}{B.S. Computer Engineering}{University of Utah}{Salt Lake City, Utah}{}{
+\vspace{6pt} \setstretch{1.2} 
+Robotics, Algorithms, Artificial Intelligence, Embedded Systems, Technical Writing, Circuit Analysis, Data Structures, Probability \& Statistics, Computer Organization and Design, Ordinary/Partial Differential Equations, Calculus, Physics, Linear Algebra, Computer Systems, Mobile Applications, Digital Systems Design, Web Software Architecture, Software Development and Architecture}}
 
 \end{itemize}
 
 
 \vspace{2pt}
+
+
 
 \section{Notable Projects}
 
@@ -94,21 +131,19 @@
 
 \begin{itemize}
 
-\item{\textbf{Custom Drone / Robot Simulation:} \textit{'Python / C++'}
-
-\vspace{5pt}
-
-\small{Gazebo and Unreal Engine physics and scene simulation. Real time functional testing on expensive systems with complicated and stochastic scenarios. Real world to simulation translation of physical robot models. Hardware-in-the-loop (HITL) component-wise testing and evaluation.}}
+\item{\textbf{\href{https://afresearchlab.com/technology/paladin-multi-mission-uas/}{Low Collateral Effects Interceptor}}: Multirotor counter UAS interceptor drone.
 
 \vspace{6pt}
 
-\item{\textbf{Real-time object detection:} \textit{'YOLO / C++ / OpenCV / Python / ROS'}
-
-\vspace{5pt}
-
-\small{Confidential government project to detect and track dangerous objects in real-time. The system required feeding real-time image and radar input  to a fusion algorithm. The system had to exceed a performance envelope of detection, tracking and controls to fulfill mission critical objectives. }}
+\item{\textbf{\href{https://sharpershape.com/applications/predictive-asset-management/}{Asset Insights}}: Autonomous inspection and anomaly detection.
 
 \vspace{6pt}
+
+\item{\textbf{\href{https://github.com/SharperShape/eclair-dataset}{ECLAIR Dataset}}: Point cloud classification model and dataset based on Minkowski Engine. 
+
+\vspace{6pt}
+
+\item{\textbf{\href{https://sharpershape.com/applications/vegetation-management/}{Wildfire Mitigation With Aerial Sensor Data}}: Analysis using AI and Machine learning on point cloud and image data to manage vegetation.
 
 \end{itemize}
 
@@ -118,49 +153,48 @@
 
 \textbf{Proficient Programming Languages:} Python, C++
 
-\vspace{3pt}
-
-\textbf{Previous Experience with Programming Languages:} Ruby, Java, Swift, Assembly, Verilog, Groovy, Matlab, Shell, C\#
-
 \vspace{6pt}
 
 \begin{itemize}
 
-\item{\textbf{Pytorch:} \textit{'Python'}
+\item{\textbf{Machine Learning:} \textit{'Python Development/C++ Inference'}
 
 \vspace{3pt}
 
-\small{ Well versed and practiced. Several projects spanning detection, and classification via EfficientNet and various other CNNs. Optical character recognition via MMOCR. Point cloud classification and model training via GNNs. }}
+\small{ Practiced in most Python modules/libraries. Several projects spanning detection, classification and generation via several CNN and DNN backbones. Optical character recognition. Point cloud classification and model training. YOLO, MMDetect, HuggingFace, etc...}}
 
 \vspace{5pt}
 
-\item{\textbf{AWS:} \textit{'BOTO3 / Python / Terraform'}
-
-\vspace{3pt}
-
-\small{ Proficient in AWS tooling and infrastructure. Include IAM, SSO, Sagemaker, ECR, EKS, RDS, Workspaces, lambda, etc... This includes networking and security expertise, knowledge of configuration management tools like Terraform and CDK's, Kubernetes and kubernetes tools, cloud infrastructure management and design, and roles and regulations surrounding supporting a cloud infrastructure accross the world.  }}
+\item{\textbf{AWS:}\small{ Proficient in all things AWS tooling and infrastructure. Knowledge of configuration management tools like Terraform and CDK's, Kubernetes and supporting tools. }}
 
 \vspace{5pt}
 
-\item \textbf{Supporting Software Skills:} Linux/Unix (Debian, RHEL, Solaris), Docker, Git, VMWare, OpenCV, Pandas, Bokeh, Matplotlib, Jupyter, ROS, Pytorch, LASTools, PDAL, Gazebo, Airsim, Unreal Engine, Kubernetes, and much much more!
+\item \textbf{Supporting Software Skills:} Linux/Unix, Markdown, Git, LaTex, Mostly CLI Tools
 
 \vspace{5pt}
 
-\item \textbf{General Business Skills:} Excellent presentation skills. Works exceptionally well in a team format and adapts easily to work flows as team and/or projects change. Supported various flavors of the agile product development framework. Experience working as a scrum master and team leader. Experience overseeing transition from waterfall to agile development team. Tried agile enough times to have a favorite flavor.
+\item \textbf{Hardware:} Nvidia GPUs, Nvidia Jetson, Connect-Tech, USB Cameras, MIPI Cameras, Echodyne Radar, Fortem Radar, Flir Cameras, Name your favorite LiDar, DJI, PX4 and Ardupilot based INS boards, ZED stereo-optic cameras, X-Box Kinect
+
+\item \textbf{Software:} Good software practice with clean and readable code. Excellent documentation practices. Experience developing and designing software practices for software engineering teams. Experience with Unreal Engine and Gazebo physical environment simulation. 
+
 
 \end{itemize}
 
 \section{References}
 
-\vspace{5pt}
+\vspace{1pt}
  
 \begin{itemize}
 
-\item{\textbf{Ashley Guinan}  \textit{'Software Engineering Manager - Former Colleague'}\begin{flushright}\small{{(402) 553-3344}}\end{flushright}}
+\item{\textbf{\href{https://www.linkedin.com/in/gecolvin/}{Glenn Colvin}}  \textit{'VP of Products'} \begin{flushright}\small{{(801) 918-9540}}\end{flushright}}
 
-\item{\textbf{Rex Jameson} \textit{'Software Architect - Mentor'}\begin{flushright}\small{{(801) 244-5592}}\end{flushright}}
+\item{\textbf{\href{https://www.linkedin.com/in/aguinan/}{Ashley Guinan}}  \textit{'Distinguished Engineer'} \begin{flushright}\small{{(402) 553-3344}}\end{flushright}}
 
-\item{\textbf{Daman Bareiss} \textit{'Senior Software Engineer - Former Colleague'}\begin{flushright}\small{{(405) 642-9754}}\end{flushright}}
+\item{\textbf{\href{https://www.linkedin.com/in/rexmjameson/}{Rex Jameson}} \textit{'Distinguished Engineer'}\begin{flushright}\small{{(801) 244-5592}}\end{flushright}}
+
+\item{\textbf{\href{https://www.linkedin.com/in/daman-bareiss/}{Daman Bareiss}} \textit{'Principal Software Engineer'}\begin{flushright}\small{{(405) 642-9754}}\end{flushright}}
+
+\item{\textbf{\href{https://www.linkedin.com/in/chrisbeaufait/}{Chris Beaufait}}  \textit{'CEO'} \begin{flushright}\small{{(616) 920-2538}}\end{flushright}}
 \end{itemize}
 
 % Publications from a BibTeX file without multibib
@@ -185,4 +219,3 @@
 
 
 %% end of file `template.tex'.
-
